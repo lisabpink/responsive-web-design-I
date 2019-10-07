@@ -84,7 +84,6 @@ body{
 
  header{
 	 display:flex;
-	 
 	 border: 2px solid blue;
  }
 header nav{
@@ -101,6 +100,7 @@ header nav a{
     color: silver;
 	text-decoration: none;
 	border: 2px solid yellow;
+	
 	
 }
 
@@ -305,9 +305,15 @@ footer{
 		justify-content: center;
 		
 	}
+	.header nav a{
+
+		padding:10px;
+	border-bottom: 1px solid gray;
+	}
 	.head2 {
 		display: flex;
 		justify-content: center;
+	
 	
 	}
 	
@@ -317,11 +323,10 @@ footer{
 }
 
 
-/* MOBILE 500PX
+/* MOBILE 500PX*/
   
   @media(max-width: 500px) {
 	.container {
-	  width: 500px;
 	  margin: 0%;
 	  padding:20%;
 	}
@@ -331,14 +336,64 @@ footer{
   
 	.container header nav {
 	  display: flex;
+	  width: 100%;
 	  flex-direction: column;
 	}
   
 	.container header nav a {
-	  margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+		  margin-bottom: 20px;
+		  padding:10px;
+		  border-top: 1px solid gray;
+		  border-bottom: 1px solid gray;	
 	}
+
+	.head2, h1, button{
+		display: flex;
+		justify-content: center;
+		width:500px;
+	}
+
 	.circlelogo{
 		display:none;
 	}
-  }
-*/
+
+	#FeatureAbout {
+		display: flex;
+		flex-direction: column;
+		width:100%;
+
+		
+		
+}
+
+	.FeaturesAndAbout {
+		display:flex;
+		flex-direction: column;	
+		width: 100%;
+		padding:20px;
+
+	}
+
+	.ServiceProductVision{
+		display: flex;
+		flex-direction: column;
+		padding:20px;
+		
+		
+	}
+
+	.content{
+		display:flex;
+		flex-direction: column;
+	}
+.contact, footer{
+	display: flex;
+	flex-direction: column;
+	padding:35px;
+
+}
+	
+}
+
