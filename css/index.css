@@ -1,3 +1,456 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* Use your own code or past solution for Great Idea Web Page CSS here!! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	padding:50px ;
+}
+ol, ul {
+	list-style: disc;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+	
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+*{max-width:100%;}
+
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+
+
+
+/* header */
+
+ header{
+	 display:flex;
+	 
+	 width:100%;
+ }
+header nav{
+	display:flex;
+	justify-content: space-between;
+	width: 100%;
+    margin-top: 40px;
+	margin-bottom: 40px;
+	
+}
+
+ 
+header nav a{
+    margin: 0 30px;
+    color: silver;
+	text-decoration: none;
+	
+	
+	
+}
+
+.GreatIdeaLogo{
+	display:flex;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+
+
+
+}
+
+.logo{
+	display:flex;
+	padding-top: 25px;
+	align-content: center;
+	
+}
+ .services-header-img{
+	 padding:20px;
+	 width:1000px;
+ }
+
+
+.head2{
+    
+    margin-top: 50px;
+	margin-bottom: 40px;
+	
+}
+ 
+.head2 .div{
+    display: flex;
+	width: 48%;
+	
+}
+.head2 .innovation p{
+	display: flex;
+	justify-content:center;
+    width: 150px;
+    height: 40px;
+    border: 1px solid gray;
+    text-align: bottom;
+    margin-left: 120px;
+    
+ 
+}
+ 
+.innovation h1{
+    font-size: 80px;
+    text-align: center;
+}
+ 
+.innovation, .circlelogo{
+	display: inline-block;
+	flex-direction:column;
+    width:48%;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.GetStarted{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:5px;
+	border:1px solid black;
+	padding:10px;
+	width:200px;
+	}
+
+#content{ 
+	display:flex;
+	flex-wrap:wrap;
+	width:999px;	
+	
+}
+.TopService {
+	display:flex;
+	padding:20px;
+	
+}
+.TopServiceText div{
+	padding:20px;
+
+	
+}
+.Boxes  {
+	display:flex;
+	flex-wrap:wrap;
+	align-content:space-between;
+	
+	
+}
+
+.BoxesText {
+	display: flex;
+	flex-wrap:wrap;
+	align-content:space-around;
+	width:452px;
+	height:200px;
+	padding:20px;
+	margin: 20px;
+	border: 1px solid gray;
+	background-color: lightgray;
+}
+.LearnMoreButton{
+
+	display: flex;
+	text-align: center;
+	justify-content:center;
+	padding:10px;
+	border: 1px solid black;
+	width:115px;
+	border-radius: 5px;
+	background-color: white;
+}
+.SomeFacts{
+	display:flex;
+	width: 1000px;
+	
+}
+
+.SomeFactsText {
+	display:flex;
+	flex-direction: 
+	margin: 20px;
+	padding:2px;
+	
+}
+
+.SomeFacts div{
+	display:flex;
+	width:200px;
+	
+}
+.ServiceFacts{
+	flex-direction:column;
+	width:535px;
+	
+	padding:20px;
+}
+
+
+#FeatureAbout  {
+	display:flex;
+	justify-content: space-around;
+	border-top: 2px solid black;
+	padding:20px 0px;
+	
+}
+.FeaturesAndAbout {
+	width: 49%;
+	padding:20px;
+}
+.BulletPoints2 {
+	list-style-position:inside;
+}
+
+
+
+.ServiceProductVision{
+	display:flex;
+	justify-content: space-around;
+	width: 100;
+	height: auto;
+	margin-top: 0px;
+	padding: 20px 20px 20px 10px;
+	border-bottom: 2px solid black;
+}
+.SePrVi{
+	padding:10px;
+}
+.contact{
+    margin-top: 20px;
+   
+}
+.ContactText{
+	display: flex;
+		flex-direction: column;
+		padding:10px;
+}
+footer{
+    text-align: center;
+}
+
+.middle-img{
+	width: 100%;
+}
+
+ /* TABLET 800PX */
+ 
+ @media(max-width: 800px) {
+	.container {
+	  width: 100%;
+	  max-width: 100%;
+	 justify-content: center;
+	}
+
+	.circlelogo{
+		display:none;
+	}
+
+	header {
+		display: flex;
+		flex-wrap:wrap-reverse;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 4%;
+	
+	}
+	nav {
+		display: flex;
+		justify-content: space-around;
+		
+		
+	}
+	header nav a{
+		margin:	0 0px;
+		font-size: 20px;
+		color: darkgray;
+		justify-content: space-around;
+	}
+
+	.head2, .button{
+		display: flex;
+		max-width:100%;
+		justify-content: center;
+
+	}
+	.FeaturesAndAbout{
+		padding:20px 0px;
+	}
+
+	.middle-img{
+	
+		width: 100%;
+	}
+.ServiceProductVision{
+	padding:20px 0px;
+}
+
+.SePrVi{
+	padding:10px;
+}
+	.ContactText{
+		display: flex;
+		flex-direction: column;
+		padding:10px;
+	}
+	.ContactText{
+		display: flex;
+		flex-direction: column;
+		padding:10px;
+	}
+}
+
+
+/* MOBILE 500PX*/
+  
+  @media(max-width: 500px) {
+	.container {
+		width:100%;
+		max-width:100%;
+		margin: 0%;
+		
+	}
+header {
+	display: flex;
+	
+}
+	.GreatIdeaLogo{
+		align-content: center;
+	}
+  
+	.container nav {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		border-bottom: 1px solid gray;
+	}
+  
+	.container  nav a {
+		display: flex;
+		justify-content: center;
+		max-width:100%;
+		  margin-bottom: 20px;
+		  padding:10px;
+		  border-top: 1px solid gray;
+		  border-bottom: LAST CHILD	
+	}
+
+	.head2, h1, button{
+		display: flex;
+		justify-content: center;
+		width:500px;
+	}
+
+	.circlelogo{
+		display:none;
+	}
+.content{
+	padding: 20px 0px;
+}
+	#FeatureAbout {
+		display: flex;
+		flex-direction: column;
+		width:100%;
+		padding:px 0px;
+}
+
+	.FeaturesAndAbout {
+		display:flex;
+		flex-direction: column;	
+		width: 100%;
+		padding:20px 0px;
+
+	}
+	.middle-img{
+		padding: 0px;
+	}
+	.ServiceProductVision{
+		display: flex;
+		flex-direction: column;
+		padding:0px;
+		
+		
+		
+	}
+	.SePrVi {
+		display:flex;
+		flex-direction: column;	
+		width: 100%;
+		padding:20px 0px;	
+		
+	}
+
+	.content{
+		display:flex;
+		flex-direction: column;
+	}
+	.ContactText, footer{
+		display: flex;
+		flex-direction: column;
+		padding:10px 0px;
+	}
+	
+}
 
