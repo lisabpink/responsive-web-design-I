@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	padding:50px ;
 }
 ol, ul {
 	list-style: disc;
@@ -67,31 +68,28 @@ h1, h2, h3, h4, h5 {
 }
 
 *{max-width:100%;}
+
+
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 
 
 
- 
-body{
-    width: 100%;
-	margin: 0 auto;
-	border: 2px solid red;
-	
-}
 
 /* header */
 
  header{
 	 display:flex;
-	 border: 2px solid blue;
+	 
+	 width:100%;
  }
 header nav{
 	display:flex;
-	
+	justify-content: space-between;
+	width: 100%;
     margin-top: 40px;
 	margin-bottom: 40px;
-	border: 2px solid pink;
+	
 }
 
  
@@ -99,7 +97,7 @@ header nav a{
     margin: 0 30px;
     color: silver;
 	text-decoration: none;
-	border: 2px solid yellow;
+	
 	
 	
 }
@@ -109,7 +107,7 @@ header nav a{
 	width: 100%;
 	justify-content: center;
 	align-content: center;
-padding-top: 10px;
+
 
 
 }
@@ -118,7 +116,7 @@ padding-top: 10px;
 	display:flex;
 	padding-top: 25px;
 	align-content: center;
-	border:2px solid green;
+	
 }
  .services-header-img{
 	 padding:20px;
@@ -162,10 +160,21 @@ padding-top: 10px;
 }
 
 .button{
-    display: flex;
-	text-align: center;
-	padding-top: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 }
+
+.GetStarted{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:5px;
+	border:1px solid black;
+	padding:10px;
+	width:200px;
+	}
 
 #content{ 
 	display:flex;
@@ -244,11 +253,12 @@ padding-top: 10px;
 	display:flex;
 	justify-content: space-around;
 	border-top: 2px solid black;
-	padding:10px;
+	padding:20px 0px;
 	
 }
 .FeaturesAndAbout {
 	width: 49%;
+	padding:20px;
 }
 .BulletPoints2 {
 	list-style-position:inside;
@@ -261,16 +271,22 @@ padding-top: 10px;
 	justify-content: space-around;
 	width: 100;
 	height: auto;
-	margin-top: 50px;
+	margin-top: 0px;
 	padding: 20px 20px 20px 10px;
 	border-bottom: 2px solid black;
 }
- 
+.SePrVi{
+	padding:10px;
+}
 .contact{
     margin-top: 20px;
    
 }
- 
+.ContactText{
+	display: flex;
+		flex-direction: column;
+		padding:10px;
+}
 footer{
     text-align: center;
 }
@@ -283,7 +299,7 @@ footer{
  
  @media(max-width: 800px) {
 	.container {
-	  width: 800px;
+	  width: 100%;
 	  max-width: 100%;
 	 justify-content: center;
 	}
@@ -300,25 +316,49 @@ footer{
 		margin-bottom: 4%;
 	
 	}
-	.nav {
+	nav {
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
+		
 		
 	}
-	.header nav a{
+	header nav a{
+		margin:	0 0px;
+		font-size: 20px;
+		color: darkgray;
+		justify-content: space-around;
+	}
 
-		padding:10px;
-	border-bottom: 1px solid gray;
-	}
-	.head2 {
+	.head2, .button{
 		display: flex;
+		max-width:100%;
 		justify-content: center;
-	
-	
+
 	}
-	
+	.FeaturesAndAbout{
+		padding:20px 0px;
+	}
+
 	.middle-img{
+	
 		width: 100%;
+	}
+.ServiceProductVision{
+	padding:20px 0px;
+}
+
+.SePrVi{
+	padding:10px;
+}
+	.ContactText{
+		display: flex;
+		flex-direction: column;
+		padding:10px;
+	}
+	.ContactText{
+		display: flex;
+		flex-direction: column;
+		padding:10px;
 	}
 }
 
@@ -327,26 +367,34 @@ footer{
   
   @media(max-width: 500px) {
 	.container {
-	  margin: 0%;
-	  padding:20%;
+		width:100%;
+		max-width:100%;
+		margin: 0%;
+		
 	}
+header {
+	display: flex;
+	
+}
 	.GreatIdeaLogo{
 		align-content: center;
 	}
   
-	.container header nav {
-	  display: flex;
-	  width: 100%;
-	  flex-direction: column;
+	.container nav {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		border-bottom: 1px solid gray;
 	}
   
-	.container header nav a {
+	.container  nav a {
 		display: flex;
 		justify-content: center;
+		max-width:100%;
 		  margin-bottom: 20px;
 		  padding:10px;
 		  border-top: 1px solid gray;
-		  border-bottom: 1px solid gray;	
+		  border-bottom: LAST CHILD	
 	}
 
 	.head2, h1, button{
@@ -358,29 +406,39 @@ footer{
 	.circlelogo{
 		display:none;
 	}
-
+.content{
+	padding: 20px 0px;
+}
 	#FeatureAbout {
 		display: flex;
 		flex-direction: column;
 		width:100%;
-
-		
-		
+		padding:px 0px;
 }
 
 	.FeaturesAndAbout {
 		display:flex;
 		flex-direction: column;	
 		width: 100%;
-		padding:20px;
+		padding:20px 0px;
 
 	}
-
+	.middle-img{
+		padding: 0px;
+	}
 	.ServiceProductVision{
 		display: flex;
 		flex-direction: column;
-		padding:20px;
+		padding:0px;
 		
+		
+		
+	}
+	.SePrVi {
+		display:flex;
+		flex-direction: column;	
+		width: 100%;
+		padding:20px 0px;	
 		
 	}
 
@@ -388,12 +446,11 @@ footer{
 		display:flex;
 		flex-direction: column;
 	}
-.contact, footer{
-	display: flex;
-	flex-direction: column;
-	padding:35px;
-
-}
+	.ContactText, footer{
+		display: flex;
+		flex-direction: column;
+		padding:10px 0px;
+	}
 	
 }
 
