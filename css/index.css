@@ -159,10 +159,7 @@ h5 {
   max-width: 100%;
 }
 
-
-
 nav {
-  
   display: flex;
   justify-content: baseline;
   padding: 20px;
@@ -178,7 +175,6 @@ nav {
   width: 100%;
 }
 a {
-  
   padding: 0px 30px;
   text-decoration: none;
   color: gray;
@@ -189,38 +185,40 @@ a {
 }
 
 .topContent {
-
   display: flex;
   box-sizing: border-box;
-  padding-top:100px;
+  padding-top: 100px;
 
-  width: 100%;
+  max-width:100%;
 }
 
 .innovationOnDemand {
   display: flex;
   flex-direction: column;
   padding: 40px;
-}
+} 
 
 .innovationOnDemand h1 {
-	
-  font-size: 70px;
+  
   text-align: center;
 }
 
 .circleLogo {
-  display: flex;
-  padding: 40px 40px 40px 150px;
+	display: flex;
+  max-width:none;
+  padding: 0px 70px 40px 120px;
 }
-.getStartedButton{
-	margin: 0px 30px 0px 156px;
+.circleLogo img{
+	max-width:none;
+}
+.getStartedButton {
+  margin: 0 auto;
 }
 .button {
   width: 60%;
 
   padding: 5px;
-  
+
   margin: 0px 30px 0px 0px;
 }
 
@@ -267,16 +265,14 @@ a {
 .middleContent {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  
 }
 
-.top2paragraphs  {
+.top2paragraphs {
   display: flex;
 }
 
 .feature,
 .about {
-  
   width: 48%;
   padding: 20px 20px 30px 0px;
 }
@@ -284,19 +280,17 @@ a {
 .middle-img {
   width: 100%;
 }
-.bottom3paragraphs  {
-	display: flex;
-  }
+.bottom3paragraphs {
+  display: flex;
+}
 .services,
 .product,
 .vision {
-  
   width: 33%;
   padding: 20px 20px 30px 0px;
 }
 
 h1 {
- 
   font-size: 60px;
 }
 
@@ -310,10 +304,8 @@ footer {
   background-color: aliceblue;
 }
 
-
-
-
-/* Service page CSS code starts here */
+/*
+Service page CSS code starts here 
 
 .services-header-img{
 	width:100%;
@@ -382,4 +374,102 @@ footer {
 }
 ul {
 	list-style: disc; 
+}*/
+
+/* Max-width 800px code starts here! */
+
+@media (max-width: 800px) {
+  body {
+    background-color: pink;
+  }
+
+
+
+a .gradient-button.gradient-button-4{
+	max-width: 700px;
+
 }
+
+.gradient-button {
+	font-size: 10px;
+}
+nav{
+	order:0;
+}
+.circleLogo{
+	display:none;
+}
+.gradient-button {
+	align-items: center;
+	width:100%;
+	
+}
+
+div.getStartedButton{
+	margin: 0 auto;
+	
+}
+  
+} /* This closes @media 800px */
+
+
+
+/* Max-width 500px code starts here! */
+
+@media (max-width: 700px) {
+  body {
+    background-color: peachpuff;
+  }
+  nav {
+
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+
+ .logo{
+	 display:block;
+	 padding:20px;
+ }
+
+  .topContent {
+    padding-top: 300px;
+  }
+
+  .gradient-button {
+    width: 60%;
+  }
+  .getStartedButton a {
+	width: 100%;
+	
+    align-items: center;
+    
+  }
+
+  
+  div.innovationOnDemand{
+	align-items: center;
+  }
+  .top2paragraphs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.feature,
+  div.about {
+    width: 100%;
+    align-items: center;
+  }
+
+  .bottom3paragraphs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.services,
+  div.product,
+  div.vision {
+    width: 100%;
+    align-items: center;
+  }
+} /* This closes @media 500px */
